@@ -1,38 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Open+Sans+Condensed:wght@700&display=swap');
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
 .App {
-  text-align: center;
+  display:grid;
+  grid-template-areas: 
+  "header"
+  "body"
+  "footer"
+  ;
+  grid-template-columns: 1fr;
+  grid-template-rows: 61px 1fr 40px;
+  gap:20px;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer{
+  grid-area: footer;
+  width: 100%;  
+  background-color: #fffbef         
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
+  margin: 0px 20px;
+  justify-content: space-between;
+  align-self: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;  
 }
 
-.App-link {
-  color: #61dafb;
+.menuButton{
+  height: 100%;  
+  padding: 0px 20px;
+  color: black;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 26px;
+  text-decoration: none;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menuButtonLogo{
+  height: 100%;  
+  padding: 0px 20px;
+  color: black;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-size: 36px;
+  text-decoration: none;
+  
 }
+
+.menuButtonLogo:hover,
+.menuButton:focus,
+.menuButton:hover {
+  color: #f9ae48;
+  cursor: pointer;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+.body{    
+    display: grid;    	
+    grid-template-columns: repeat(3, 250px);    
+    gap:20px;
+    justify-content: center;
+    margin: 0px 50px;
+    background-color: #fffdf8;
+    
+  }

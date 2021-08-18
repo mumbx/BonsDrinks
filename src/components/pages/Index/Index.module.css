@@ -1,0 +1,9 @@
+.body{    
+    display: grid;    	
+    grid-template-columns: 1fr;
+    align-self: center;
+    justify-self: center;    
+    gap:20px;
+    margin: 0px 50px;    
+    
+  }

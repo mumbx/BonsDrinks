@@ -1,0 +1,11 @@
+.body{    
+    display: grid;    	
+    grid-template-columns: repeat(4, 250px);    
+    gap:20px;
+    justify-content: center;
+    margin: 0px 50px;
+    background-color: #fffdf8;
+    overflow-y: scroll;
+    margin: 0 auto;
+    width: auto;
+  }
